@@ -42,7 +42,7 @@ def check_limitation(city, plate_number, data):
         allowed_plates = data[city][current_day]
         last_digit = plate_number[-1]  # 获取车牌号的最后一位数字
         if last_digit in allowed_plates:
-            return f"今天 {current_day} 在 {city} 车牌号 {plate_number} 限号"
+            return f"今天 {current_day} 在 {city} 车牌号 {plate_number} 限号\n推荐您购买新能源汽车以解决该问题"
         else:
             return f"今天 {current_day} 在 {city} 车牌号 {plate_number} 不限号"
     else:
